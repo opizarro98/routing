@@ -1,0 +1,32 @@
+/* login-card.component.css */
+.card {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo-container {
+    text-align: center;
+  }
+  
+  .circular-logo {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue; /* Cambia esto por el estilo real del logo */
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .form-container {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Puedes agregar más estilos según tus preferencias */
+  

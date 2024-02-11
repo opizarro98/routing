@@ -1,0 +1,28 @@
+<!-- servicios.component.html -->
+<div class="cover-image-container">
+    <img src="../../../assets/image/fondo.jpg" alt="Cover Image" class="cover-image">
+    <h2 class="image-title">Conoce el universo</h2>
+  </div>
+  
+  <div class="nasa-services-container">
+    <h2>Imagen del Día</h2>
+    <div *ngIf="astronomyPicture" class="image-description-container">
+      <img [src]="astronomyPicture.url" alt="{{ astronomyPicture.title }}" class="nasa-image">
+      <div class="image-description">
+        <h3>{{ astronomyPicture.title }}</h3>
+        <p>{{ astronomyPicture.explanation }}</p>
+      </div>
+    </div>
+    <h2>Planetas</h2>
+    <div class="planet-images-container">
+      <div *ngFor="let planet of displayedPlanetImages; let i = index">
+        <img [src]="planet.img_src" alt="{{ planet.title }}">
+        <h3>{{ planet.title }}</h3>
+       
+      </div>
+    </div>
+  
+    <button class="custom-button" (click)="loadMoreImages()">Cargar más imágenes</button>
+
+  </div>
+  

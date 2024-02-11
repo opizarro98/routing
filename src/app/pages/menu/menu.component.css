@@ -1,0 +1,38 @@
+/* menu.component.css */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: top 0.3s; /* Agregar transición suave */
+    z-index: 1000; /* Ajustar según sea necesario, debe ser mayor que el z-index del carrusel */
+  }
+  
+  .navbar.sticky {
+    top: -50px; /* o cualquier altura negativa que prefieras */
+  }
+  
+  .logo {
+    width: 50px;
+    height: auto;
+  }
+  
+  .menu-list {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .menu-list li {
+    margin-right: 20px;
+  }
+  
+  .menu-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+  

@@ -1,0 +1,86 @@
+.cover-image-container {
+    position: relative; /* Establece la posición relativa para posicionar el título */
+  }
+  
+  .image-title {
+    position: absolute; /* Establece la posición absoluta */
+    top: 50%; /* Alinea el título en la mitad superior del contenedor */
+    left: 50%; /* Alinea el título en el centro horizontal del contenedor */
+    transform: translate(-50%, -50%); /* Centra el título usando transformación */
+    color: #fff; /* Color del texto blanco */
+    font-size: 24px; /* Tamaño del texto, ajusta según sea necesario */
+  }
+  .cover-image {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: auto; /* Ajusta la altura automáticamente */
+    max-height: 20%; /* Opcional: establece una altura máxima */
+  }  
+  
+  .nasa-services-container {
+    text-align: center;
+  }
+  
+  .nasa-services-container h2 {
+    color: #333;
+  }
+  
+  .image-description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .nasa-image {
+    width: 30%; /* Ajusta el porcentaje según desees */
+    max-width: 100%; /* Ajusta según necesidades de responsividad */
+    border-radius: 8px; /* Agrega esquinas redondeadas */
+  }
+  
+  .image-description {
+    width: 50%;
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .image-description h3 {
+    color: #333;
+    font-size: 1.5em; /* Ajusta el tamaño de la fuente según desees */
+    margin-bottom: 10px;
+  }
+  
+  .image-description p {
+    color: #666;
+    font-size: 1em; /* Ajusta el tamaño de la fuente según desees */
+  }
+  /* servicios.component.css */
+/* Otras reglas de estilo */
+
+.planet-images-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.planet-images-container > div {
+  width: calc(33.33% - 15px); /* Ajusta según desees, ten en cuenta el espacio entre las columnas */
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+button.custom-button {
+    background-color: #28a745; /* Color verde */
+    border: 1px solid #28a745; /* Borde verde */
+    border-radius: 8px; /* Esquinas redondeadas */
+    color: #fff; /* Color del texto blanco */
+    padding: 10px 20px; /* Ajusta el espaciado interno según sea necesario */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s ease; /* Transición de color al pasar el mouse */
+  
+    /* Estilos al pasar el mouse sobre el botón */
+    &:hover {
+      background-color: #218838; /* Color verde oscuro al pasar el mouse */
+      border-color: #1e7e34; /* Borde verde oscuro al pasar el mouse */
+    }
+}

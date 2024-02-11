@@ -1,0 +1,66 @@
+<!-- home.component.html -->
+<div class="carousel-container">
+    <ngb-carousel *ngIf="images" [showNavigationArrows]="false">
+      <ng-template ngbSlide *ngFor="let image of images">
+        <img [src]="image.src" alt="Slide {{image.id}}" class="img-fluid">
+        <div class="carousel-caption">
+          <div class="caption-content">
+            <h3 class="title-bold">{{image.titulo}}</h3>
+            <p class="title-normal">{{image.descripcion}}</p>
+          </div>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+  
+  
+<div class="line-container" id="interactive-line">
+    <hr>
+</div>
+
+<div class="title-container">
+    <h2>Servicios</h2>
+  </div>
+  
+<div class="card-container">
+    <div class="card">
+      <img src="../../../assets/image/logo.png" alt="Card 1" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Descubre</h5>
+        <p class="card-text">Imagenes reales tomadas por satelites, telescopio, robots espaciales, etc.</p>
+        <button class="btn btn-success"><a routerLink="/servicios">Conoce aqui</a></button>
+      </div>
+    </div>
+  </div>
+ <!-- Texto sobre la NASA -->
+ <div class="nasa-info-container">
+  <h2>Descubre la NASA</h2>
+
+  <!-- Primer párrafo -->
+  <p>
+    Fundada en 1958, la Administración Nacional de Aeronáutica y del Espacio (NASA) ha sido
+    un faro de la exploración espacial y la investigación científica. Desde sus primeros días,
+    la NASA ha impulsado la innovación, realizando misiones icónicas y transformando nuestra
+    comprensión del universo.
+  </p>
+
+  <!-- Segundo párrafo -->
+  <p>
+    La agencia ha contribuido significativamente al avance tecnológico y científico, desarrollando
+      tecnologías pioneras y descubriendo fenómenos cósmicos. Además, ha inspirado a generaciones
+      con su visión audaz del espacio, demostrando el poder de la exploración para unir a la humanidad
+      y motivar a futuros científicos, ingenieros y exploradores.
+  </p>
+</div>
+
+<!-- Tarjeta centrada sobre la NASA -->
+<div class="nasa-card">
+  <h2>Conoce la NASA</h2>
+  <p>
+    La NASA continúa innovando con proyectos vanguardistas, y uno de los más recientes y
+    significativos es el <strong>Proyecto Artemis</strong>. Este ambicioso programa tiene como
+    objetivo llevar a la primera mujer y al próximo hombre a la Luna, marcando el retorno
+    humano a nuestro satélite natural y sentando las bases para futuras misiones a Marte.
+  </p>
+</div>
+  
